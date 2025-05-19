@@ -11,7 +11,7 @@ A simple movie website built using HTML, CSS, and JavaScript.
 
 ## 📸 Screenshot
 
-![Screenshot](screenshott.png)
+![Screenshot](img/screenshott.png)
 
 ## 🛠️ Tech Stack
 
