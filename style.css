@@ -334,6 +334,7 @@ header section .cards {
     display: flex;
     align-items: center;
     overflow-x: auto;
+    scroll-behavior: smooth;
    
 }
 
@@ -362,8 +363,8 @@ header section .cards .poster{
     
 }
 
-header section .cards .card{
-    width: 300px;
+header section .cards .card:hover {
+    min-width: 300px;
     overflow: hidden;
     
 }
@@ -376,7 +377,7 @@ header section .cards .card .rest_card{
     left: 0;
     top: 0;
     z-index: 999999;
-    opacity: 1;
+    opacity: 0;
     transition: 1s linear;
 }
 
@@ -411,5 +412,40 @@ header section .cards .card .rest_card .cont{
     
 }
 
+header section .cards .card .rest_card .cont .sub{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+header section .cards .card .rest_card .cont .sub p{
+   font-size: 12px;
+   font-weight: 400;
+   color: rgb(255, 255, 255, .7);
+  }
+
+  header section .cards .card .rest_card .cont .sub h3{
+    font-size: 12px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+   }
+
+   header section .cards .card .rest_card .cont .sub h3 span{
+    background: yellow;
+    font-weight: 500;
+    color: black;
+    padding: 0px 3px;
+    margin: 0px 5px 0px 10px;
+    border-radius: 2px;
+   }
+
+   header section .cards .card .rest_card .cont .sub h3 i{
+    margin-right: 3px;
+   
+   }
+
+   header section .cards .card:hover .rest_card {
+    opacity: 1;
+   }
 
